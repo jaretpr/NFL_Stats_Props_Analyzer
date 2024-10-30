@@ -64,7 +64,7 @@ This app uses the [Odds API](https://the-odds-api.com/) to download NFL player p
 
 #### Example of Comparison Excel Output
 ![Comparison Excel Output](Images/comparison.png)
-
+![Comparison Excel Output1](Images/comparison1.png)
 
 ## Code Structure
 
