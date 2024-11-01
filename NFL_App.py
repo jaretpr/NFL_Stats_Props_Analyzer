@@ -216,7 +216,7 @@ def get_nfl_player_props(api_key, event_id):
     params = {
         "apiKey": api_key,
         "regions": "us",
-        "markets": "player_pass_tds,player_rush_yds,player_receptions",  # Updated market names
+        "markets": "player_pass_tds,player_rush_yds,player_receptions,player_reception_yds,player_reception_longest,player_pass_attempts,player_pass_completions,player_pass_interceptions,player_rush_attempts,player_rush_longest",  # Updated market names
         "oddsFormat": "american"
     }
     
@@ -301,8 +301,15 @@ def compare_props_and_stats(props_file, stats_file):
     # Updated mapping with alternative terms for each prop type
     stat_mapping = {
         "player_pass_tds": "Passing TDs",
+        "player_pass_attempts": "Passing Attempts",
+        "player_pass_completions": "Passing Completions",
+        "player_pass_interceptions": "Interceptions",
         "player_rush_yds": "Rushing Yards",
+        "player_rush_attempts": "Rushing Attempts",
+        "player_rush_longest": "Longest Rush",
         "player_receptions": "Receptions",
+        "player_reception_yds": "Receiving Yards",
+        "player_reception_longest": "Longest Reception"
     }
 
     comparison_results = []
